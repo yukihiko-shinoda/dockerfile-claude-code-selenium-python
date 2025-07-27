@@ -1,0 +1,21 @@
+services:
+  claude-code-selenium-python:
+    build:
+      args:
+        VERSION_UV: ${VERSION_UV:?err}
+        VERSION_CLAUDE_CODE: ${VERSION_CLAUDE_CODE:?err}
+        VERSION_CHROMEDRIVER: ${VERSION_CHROMEDRIVER:?err}
+      context: .
+    entrypoint:
+      - /bin/bash
+    image: futureys/claude-code-selenium-python:development
+    user: root
+    volumes:
+      - .:/workspace
+      - /workspace/.venv
+      - /workspace/.selenium-cache
+      # - Using uv in Docker | uv
+      #   https://docs.astral.sh/uv/guides/integration/docker/#caching
+      - uv-cache:/root/.cache/uv
+volumes:
+  uv-cache:
