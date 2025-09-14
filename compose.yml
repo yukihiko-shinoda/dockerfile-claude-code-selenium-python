@@ -2,8 +2,7 @@ services:
   claude-code-selenium-python:
     build:
       args:
-        VERSION_UV: ${VERSION_UV:?err}
-        VERSION_CLAUDE_CODE: ${VERSION_CLAUDE_CODE:?err}
+        DOCKER_IMAGE_TAG_CLAUDE_CODE_PYTHON_DEVELOPMENT: ${DOCKER_IMAGE_TAG_CLAUDE_CODE_PYTHON_DEVELOPMENT:?err}
         VERSION_CHROMEDRIVER: ${VERSION_CHROMEDRIVER:?err}
       context: .
     entrypoint:
