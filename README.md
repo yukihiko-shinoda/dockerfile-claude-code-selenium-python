@@ -1,6 +1,7 @@
 <!-- markdownlint-disable first-line-h1 -->
 [![Test](https://github.com/yukihiko-shinoda/dockerfile-claude-code-selenium-python/actions/workflows/test.yml/badge.svg)](https://github.com/yukihiko-shinoda/dockerfile-claude-code-selenium-python/actions/workflows/test.yml)
 [![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/futureys/claude-code-selenium-python)](https://hub.docker.com/r/futureys/claude-code-selenium-python/dockerfile)
+[![Dependabot](https://flat.badgen.net/github/dependabot/yukihiko-shinoda/dockerfile-claude-code-selenium-python?icon=dependabot)](https://github.com/yukihiko-shinoda/dockerfile-claude-code-selenium-python/security/dependabot)
 
 # Quick reference
 
